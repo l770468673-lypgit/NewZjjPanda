@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <!--<include layout="@layout/common_title"/>-->
+
+    <TextView
+        style="@style/BigTextNewLogin"
+        android:layout_height="105dp"
+        android:text="设置登录密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_login_item_height_53dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/new_login_padding_edge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="65px"
+            android:text="设置密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size" />
+
+
+        <EditText
+            android:id="@+id/et_login_pwd1"
+            style="@style/EditTextMaxWidthNewLogin"
+            android:hint="6~18位(必须包含字母和数字)"
+            android:inputType="textPassword"
+            android:maxLength="18" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_pwd1"
+        style="@style/common_horizontalLine_matchParent"
+        android:layout_marginLeft="@dimen/new_login_padding_edge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_login_item_height_53dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/new_login_padding_edge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="65px"
+            android:text="确认密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size" />
+
+
+        <EditText
+            android:id="@+id/et_login_pwd2"
+            style="@style/EditTextMaxWidthNewLogin"
+            android:hint="请再次输入登录密码"
+            android:inputType="textPassword"
+            android:maxLength="25" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_pwd2"
+        style="@style/common_horizontalLine_matchParent"
+        android:layout_marginLeft="@dimen/new_login_padding_edge" />
+
+    <Button
+        android:id="@+id/bt_confirm_set_login_pwd"
+        style="@style/btn_common_style"
+        android:layout_marginTop="48dp"
+        android:text="完成"
+        />
+
+</LinearLayout>
+

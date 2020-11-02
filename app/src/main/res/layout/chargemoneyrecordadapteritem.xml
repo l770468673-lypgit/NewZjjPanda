@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/charge_card_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="31017893347382900003"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/charge_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="123123123213"
+            tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/charge_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="20"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/charge_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/appcharge_grid_item_boxframe"
+                android:text="待付款"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/charge_type_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/appcharge_grid_item_boxframe"
+                android:text="圈存"
+                tools:ignore="MissingConstraints" />
+
+<!--            <Button-->
+<!--                android:id="@+id/charge_type_refund"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="26dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_toLeftOf="@+id/charge_type_tv"-->
+<!--                android:background="@drawable/appcharge_grid_item_boxframe"-->
+<!--                android:text="退款"-->
+<!--                tools:ignore="MissingConstraints" />-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="6dp"
+        android:background="@color/d1d1d1" />
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".drawlay.ChargeMoneyRecord">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/chargemoney_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="20dp"
+            android:text="返回"
+            android:textColor="#262626"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/charge_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="APP充值记录"
+            android:textColor="#262626"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/b8C8C8C"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/charge_record_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:padding="10dp" />
+    <TextView
+        android:id="@+id/charge_record_save_tv"
+        android:text="暂无数据"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

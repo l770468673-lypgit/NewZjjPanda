@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".drawlay.Drive_RecordActivty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/draw_savemoney_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="20dp"
+            android:text="返回"
+            android:textColor="#262626"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/save_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="乘车记录"
+            android:textColor="#262626"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_shownfcload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="50px"
+            android:src="@mipmap/gif_nfc_read_wiat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nfc_read_card_wait_alert"
+            android:textColor="@color/alert_text_color" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/train_record_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nulldate_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="暂无数据"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

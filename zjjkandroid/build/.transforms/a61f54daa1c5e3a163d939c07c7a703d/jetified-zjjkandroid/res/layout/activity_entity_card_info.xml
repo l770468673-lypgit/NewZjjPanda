@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_activity_bg"
+    android:orientation="vertical">
+    <!--<include layout="@layout/common_title"/>.-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="633px">
+
+    <LinearLayout
+        android:id="@+id/ll_card_info"
+        android:layout_width="956px"
+        android:layout_height="573px"
+        android:layout_centerInParent="true"
+        android:paddingTop="100px"
+        android:paddingBottom="40px"
+        android:paddingLeft="70px"
+        android:background="@mipmap/cttic_card_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额(元):"
+            android:textColor="@color/white" />
+
+            <TextView
+                android:layout_marginTop="30px"
+                android:id="@+id/tv_card_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+        <TextView
+            android:layout_marginTop="20px"
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡号:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_card_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月累计消费:"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_card_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136px"
+        android:layout_alignRight="@id/ll_card_info"
+        android:src="@mipmap/icon_cttic_recharge_btn" />
+</RelativeLayout>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="20px"
+    android:text="电子钱包近期交易记录"
+        android:background="@color/white"
+        android:padding="15px"
+    android:textColor="#4d4d4d"
+    android:textStyle="bold" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1px"
+android:background="@color/color_divider" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+    android:background="@color/white"
+
+    android:padding="30px">
+
+<TextView
+    android:id="@+id/tv_trade_date"
+    style="@style/card_trade_info_style"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:text="时间"
+    android:textColor="#9A9A9A"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/tv_trade_amount"
+    style="@style/card_trade_info_style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="金额" />
+
+<TextView
+    android:id="@+id/tv_trade_type"
+    style="@style/card_trade_info_style"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="类型" />
+</LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1px"
+android:background="@color/color_divider" />
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rv_record"
+    android:background="@color/white"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:overScrollMode="never"
+android:scrollbars="none" />
+</LinearLayout>

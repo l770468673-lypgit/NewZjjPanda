@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:id="@+id/id_draw_menu_layout"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        android:background="@color/b28AAF6"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.zjjxl.zjjxl_drawLayout_panda.utils.CircleImageView
+            android:id="@+id/drawleft_mine_mine"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+             android:src="@mipmap/pandaapplogo" />
+
+        <TextView
+            android:id="@+id/draw_loginnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nav_header_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/menu_addcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/draw_addcard" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/menu_addcard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_mrorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/draw_myorder" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/menu_mrorder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_myinvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/draw_myinvoice" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/menu_myinvoice" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_myaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/draw_myaddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/menu_myaddress" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/menu_login_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/login_travel_btn"
+            android:gravity="center"
+            android:text="@string/menu_login"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

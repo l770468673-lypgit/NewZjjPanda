@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_activity_bg"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/device_logo"
+        android:layout_marginTop="312px"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/pb_check_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144px"
+        android:src="@mipmap/gif_progress_bar"
+        android:layout_gravity="center_horizontal"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    <TextView
+        android:layout_marginTop="43px"
+        android:textColor="#5495FA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="44px"
+        android:text="正在进行数据读取.."/>
+</LinearLayout>

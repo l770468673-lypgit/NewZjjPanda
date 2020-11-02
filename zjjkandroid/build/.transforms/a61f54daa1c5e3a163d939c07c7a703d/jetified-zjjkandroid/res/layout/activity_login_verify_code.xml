@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<include-->
+        <!--layout="@layout/common_title"/>-->
+
+    <TextView
+        style="@style/BigTextNewLogin"
+        android:layout_marginTop="44dp"
+        android:text="输入验证码" />
+
+    <TextView
+        android:id="@+id/tv_tip_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textSize="@dimen/common_text_size"
+        android:layout_marginTop="19dp"
+        tools:text="已向xxx发送验证码短信，请查看短信并输入验证码" />
+
+    <TextView
+        android:id="@+id/tv_counter_veryfied_code"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="54秒后重新发送"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/text_black_2" />
+
+   <com.crb.cttic.mvp.view.base.VeryfiedCodeEditText
+        android:id="@+id/veryfied_code_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="39dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_not_received_code"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="没收到验证码？"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
